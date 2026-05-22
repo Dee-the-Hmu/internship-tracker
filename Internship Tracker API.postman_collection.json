@@ -1,0 +1,15 @@
+{
+  "info": {
+    "_postman_id": "ac48fea7-aea6-4021-bbb3-eb5e3ba77b0c",
+    "name": "Internship Tracker API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55013379",
+    "_collection_link": "https://go.postman.co/collection/55013379-ac48fea7-aea6-4021-bbb3-eb5e3ba77b0c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Folder",
+      "item": []
+    }
+  ]
+}
