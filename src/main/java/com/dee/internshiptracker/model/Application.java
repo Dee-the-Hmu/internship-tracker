@@ -1,5 +1,7 @@
 package com.dee.internshiptracker.model;
 
+import com.dee.internshiptracker.util.Status;
+
 public class Application {
     private int applicationID;
     private int companyID;
@@ -8,6 +10,7 @@ public class Application {
     private String postingURL;
     private String note; 
     private String location; 
+    private Status status;
 
     public Application(){
         this.applicationID = 0;
@@ -17,6 +20,7 @@ public class Application {
         this.postingURL = null;
         this.note = null;
         this.location = null;
+        status = Status.APPLIED;
     }
 
     public Application(int appId, int compId, String role, String recruiterContact, String url, String note, String location){
@@ -27,6 +31,7 @@ public class Application {
         this.postingURL = url;
         this.note = note;
         this.location = location;
+        status = Status.APPLIED;
     }
 
     public void setApplicationID(int appId){ this.applicationID = appId; }
@@ -36,6 +41,7 @@ public class Application {
     public void setPostingURL(String url){ this.postingURL = url; }
     public void setNote(String note) { this.note = note; }
     public void setLocation(String location){ this.location = location; }
+    public void setStatus(Status status){ this.status = status; }
 
     public int getApplicationID() { return this.applicationID; }
     public int getCompanyID() { return this.companyID; }
@@ -44,4 +50,5 @@ public class Application {
     public String getPostingURL() { return this.postingURL; }
     public String getNote() { return this.note; }
     public String getLocation() { return this.location; }
+    public Status getStatus() { return this.status; }
 }
