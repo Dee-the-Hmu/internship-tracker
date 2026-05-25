@@ -1,22 +1,22 @@
 package com.dee.internshiptracker.model;
 
 public class Company {
-    private int compId;
-    private String compName; 
+    private int companyID;
+    private String companyName; 
 
-    public company(){
-        this.compId = 0;
-        this.compName = null;
+    public Company(){
+        this.companyID= 0;
+        this.companyName = null;
     }
 
-    public company(int compId, String compName){
-        this.compId = compId;
-        this.compName = compName; 
+    public Company(int compId, String compName){
+        this.companyID = compId;
+        this.companyName = compName; 
     }
 
-    public void setCompId(int compId) { this.compId = compId; }
-    public void setCompName(String compName) { this.compName = compName; }
+    public void setCompanyID(int compId) { this.companyID= compId; }
+    public void setCompanyName(String compName) { this.companyName = compName; }
 
-    public int getCompId() { return this.compId; }
-    public String getCompName() { return this.compName; }
+    public int getCompanyID() { return this.companyID; }
+    public String getCompanyName() { return this.companyName; }
 }

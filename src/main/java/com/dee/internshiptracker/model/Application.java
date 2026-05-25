@@ -1,46 +1,47 @@
 package com.dee.internshiptracker.model;
 
 public class Application {
-    private int appId;
-    private int compId;
+    private int applicationID;
+    private int companyID;
     private String role;
     private String recruiterContact;
-    private String url;
+    private String postingURL;
     private String note; 
     private String location; 
 
-    public application(){
-        this.appId = 0;
-        this.compId = 0;
+    public Application(){
+        this.applicationID = 0;
+        this.companyID = 0;
         this.role = null;
         this.recruiterContact = null;
-        this.url = null;
+        this.postingURL = null;
         this.note = null;
         this.location = null;
     }
 
-    public application(int appId, int compId, String role, String recruiterContact, String url, String note, String location){
-        this.appId = appId;
-        this.compId = compId; 
+    public Application(int appId, int compId, String role, String recruiterContact, String url, String note, String location){
+        this.applicationID = appId;
+        this.companyID = compId; 
         this.role = role;
         this.recruiterContact = recruiterContact;
-        this.url = url;
+        this.postingURL = url;
         this.note = note;
         this.location = location;
     }
 
-    public void setAppId(int appId){ this.appId = appId; }
-    public void setCompId(int compId){ this.comppId = compId; }
+    public void setApplicationID(int appId){ this.applicationID = appId; }
+    public void setCompanyID(int compId){ this.companyID = compId; }
     public void setRole(String role){ this.role = role; }
     public void setRecruiterContact(String recruiterContact){ this.recruiterContact = recruiterContact; }
-    public void setUrl(String url){ this.url = url; }
+    public void setPostingURL(String url){ this.postingURL = url; }
     public void setNote(String note) { this.note = note; }
     public void setLocation(String location){ this.location = location; }
 
-    public int getAppId() { return this.appId; }
-    public int getCompId() { return this.compId; }
+    public int getApplicationID() { return this.applicationID; }
+    public int getCompanyID() { return this.companyID; }
     public String getRole() { return this.role; }
     public String getRecruiterContact() { return this.recruiterContact; }
-    public String getUrl() { return this.url; }
+    public String getPostingURL() { return this.postingURL; }
+    public String getNote() { return this.note; }
     public String getLocation() { return this.location; }
 }
