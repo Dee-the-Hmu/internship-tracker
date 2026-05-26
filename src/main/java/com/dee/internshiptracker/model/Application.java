@@ -23,7 +23,7 @@ public class Application {
         status = Status.APPLIED;
     }
 
-    public Application(int appId, int compId, String role, String recruiterContact, String url, String note, String location){
+    public Application(int appId, int compId, String role, String recruiterContact, String url, String note, String location, Status status){
         this.applicationID = appId;
         this.companyID = compId; 
         this.role = role;
@@ -31,7 +31,7 @@ public class Application {
         this.postingURL = url;
         this.note = note;
         this.location = location;
-        status = Status.APPLIED;
+        this.status = status;
     }
 
     public void setApplicationID(int appId){ this.applicationID = appId; }
